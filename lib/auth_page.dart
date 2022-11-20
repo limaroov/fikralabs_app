@@ -12,7 +12,7 @@ class _LoginState extends State<AuthPage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("Hello World"),
+        child: Text("Authentication Page"),
       ),
     );
   }
