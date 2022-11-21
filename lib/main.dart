@@ -55,8 +55,12 @@ class MyApp extends StatelessWidget {
         splash: Center(
           child: Stack(
             children: <Widget>[
-              Image.asset("images/constellations.png"),
-              Image.asset("images/logo.png"),
+              Image.asset(
+                "images/logo.png",
+              ),
+              Image.asset(
+                "images/constellations.png",
+              ),
             ],
           ),
         ),

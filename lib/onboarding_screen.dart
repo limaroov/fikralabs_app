@@ -27,11 +27,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           PageView(
             controller: _controller,
             onPageChanged: (index) {
-              if (index == 2) {
-                setState(() {
-                  onLastPage = true;
-                });
-              }
+              setState(() {
+                onLastPage = index == 2;
+              });
             },
             children: const [
               IntroPage1(),

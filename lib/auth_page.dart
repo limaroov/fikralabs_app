@@ -10,9 +10,39 @@ class AuthPage extends StatefulWidget {
 class _LoginState extends State<AuthPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Authentication Page"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text("Email"),
+                TextField(
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Enter your email',
+                      hintStyle: TextStyle(color: Colors.grey),
+                      fillColor: Colors.white),
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text("Password"),
+                TextField(
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Enter your email',
+                      hintStyle: TextStyle(color: Colors.grey),
+                      fillColor: Colors.white),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

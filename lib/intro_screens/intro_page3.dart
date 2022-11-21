@@ -26,7 +26,7 @@ class IntroPage3 extends StatelessWidget {
             Container(
               margin: const EdgeInsets.all(10),
               child: const Text(
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.grey, height: 2),
               ),
