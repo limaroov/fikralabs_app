@@ -50,15 +50,19 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   ),
                   !onLastPage
                       ? Container(
-                          margin: const EdgeInsets.all(10),
+                          width: double.infinity,
+                          margin: const EdgeInsets.only(top: 20),
                           child: ElevatedButton(
                             onPressed: () {
                               _controller.nextPage(
                                   duration: const Duration(milliseconds: 500),
-                                  curve: Curves.easeIn);
+                                  curve: Curves.easeInOut);
                             },
                             style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+                              padding: const EdgeInsets.all(15),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15.0),
+                              ),
                               textStyle: const TextStyle(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -67,7 +71,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           ),
                         )
                       : Container(
-                          margin: const EdgeInsets.all(10),
+                          width: double.infinity,
+                          margin: const EdgeInsets.only(top: 20),
                           child: ElevatedButton(
                             onPressed: () {
                               Navigator.push(
@@ -80,7 +85,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               );
                             },
                             style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+                              padding: const EdgeInsets.all(15),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15.0),
+                              ),
                               textStyle: const TextStyle(
                                 fontWeight: FontWeight.bold,
                               ),
