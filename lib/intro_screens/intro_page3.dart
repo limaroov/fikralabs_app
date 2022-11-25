@@ -17,7 +17,7 @@ class IntroPage3 extends StatelessWidget {
               height: 250,
             ),
             Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: const Text(
                 "Transact fast and easy !",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),

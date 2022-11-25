@@ -17,7 +17,7 @@ class IntroPage2 extends StatelessWidget {
               height: 250,
             ),
             Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: const Text(
                 "Save and invest at the same time !",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
